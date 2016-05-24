@@ -210,3 +210,12 @@ keepBackup = false
 tool = codecompare
 guitool = codecompare
 .nuget/
+
+Websockets.DroidBridge/.gitignore
+Websockets.DroidBridge/*.iml
+Websockets.DroidBridge/.gradle
+Websockets.DroidBridge/local.properties
+Websockets.DroidBridge/.idea/workspace.xml
+Websockets.DroidBridge/.idea/libraries
+Websockets.DroidBridge/build
+Websockets.DroidBridge/captures
