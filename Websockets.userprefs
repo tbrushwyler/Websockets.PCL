@@ -1,10 +1,10 @@
-﻿<Properties StartupItem="Websockets.IosTests/Websockets.IosTests.csproj">
+﻿<Properties StartupItem="Websockets.DroidTests/Websockets.DroidTests.csproj">
   <DisabledProjects>
-    <String>Websockets.Universal/Websockets.Universal.csproj</String>
-    <String>Websockets.Net/Websockets.Net.csproj</String>
-    <String>Websockets.Droid/Websockets.Droid.csproj</String>
-    <String>Websockets.DroidTests/Websockets.DroidTests.csproj</String>
+    <String>Websockets.Ios/Websockets.Ios.csproj</String>
     <String>Websockets.IosTests/Websockets.IosTests.csproj</String>
+    <String>Websockets.UniversalTests/Websockets.UniversalTests.csproj</String>
+    <String>Websockets.Universal/Websockets.Universal.csproj</String>
+    <String>Websockets.WP8/Websockets.WP8.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="AppStore|iPhone" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Websockets.Ios/WebsocketConnectionIos.cs">

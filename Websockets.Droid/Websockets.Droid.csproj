@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{0A65C595-9E17-487C-A880-A11DA9751D89}</ProjectGuid>
     <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -58,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Websockets\Websockets.csproj">
-      <Project>{1a23d79e-7a64-450c-960c-4848b0149e3d}</Project>
+      <Project>{1A23D79E-7A64-450C-960C-4848B0149E3D}</Project>
       <Name>Websockets</Name>
     </ProjectReference>
   </ItemGroup>

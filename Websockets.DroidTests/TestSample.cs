@@ -12,6 +12,7 @@ namespace Websockets.DroidTests
         private Websockets.IWebSocketConnection connection;
         private bool Failed;
         private bool Echo;
+        private string ErrorMessage;
 
         [SetUp]
         public void Setup()
@@ -48,7 +49,8 @@ namespace Websockets.DroidTests
             }
 
             if (!connection.IsOpen)
-                return;
+                Assert.Fail("Failed to open connection. Error: {0}", ErrorMessage);
+            
             Console.WriteLine("Connected !");
 
             System.Diagnostics.Trace.WriteLine("HI");
@@ -62,13 +64,13 @@ namespace Websockets.DroidTests
             }
 
             if (!Echo)
-                return;
+                Assert.Fail("Failed to receive echo.");
 
             Console.WriteLine("Received !");
 
             Console.WriteLine("Passed !");
             Trace.WriteLine("Passed");
-            Assert.True(true);
+            Assert.Pass();
         }
 
         private void Connection_OnOpened()
@@ -91,6 +93,7 @@ namespace Websockets.DroidTests
         private void Connection_OnError(string obj)
         {
             Failed = true;
+            ErrorMessage = obj;
             Trace.Write("ERROR " + obj);
         }
 

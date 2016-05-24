@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -51,13 +51,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Websockets.Net\Websockets.Net.csproj">
-      <Project>{61331f41-683a-4a68-ad09-368adba677b7}</Project>
-      <Name>Websockets.Net</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Websockets\Websockets.csproj">
-      <Project>{1a23d79e-7a64-450c-960c-4848b0149e3d}</Project>
+      <Project>{1A23D79E-7A64-450C-960C-4848B0149E3D}</Project>
       <Name>Websockets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Websockets.Net\Websockets.Net.csproj">
+      <Project>{61331F41-683A-4A68-AD09-368ADBA677B7}</Project>
+      <Name>Websockets.Net</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
